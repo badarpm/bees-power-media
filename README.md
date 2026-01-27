@@ -1,11 +1,11 @@
-# 🐝 Bee's Power Media Manager
+# 🐝 Bee's Power Media
 
 **Sweet, efficient media management for Windows**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Platform: Windows](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)](https://www.microsoft.com/windows)
-[![Status: In Development](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/YOUR_USERNAME/bees-power-media)
+[![Status: In Development](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/badarpm/bees-power-media)
 
 > *"Like a bee colony - organized, efficient, and productive!"* 🍯
 
@@ -13,7 +13,7 @@
 
 ## 🌟 Overview
 
-**Bee's Power Media Manager** is a desktop application for Windows that converts media files between formats with **zero quality loss** using copy streams technology. No re-encoding means conversions are 10-100x faster than traditional tools!
+**Bee's Power Media** is a desktop application for Windows that converts media files between formats with **zero quality loss** using copy streams technology. No re-encoding means conversions are 10-100x faster than traditional tools!
 
 Currently in active development - watch this space! ⭐
 
@@ -58,13 +58,13 @@ Currently in active development - watch this space! ⭐
 - **Python 3.10+** (for running from source)
 
 ### Download Release (Recommended - Coming Soon)
-Standalone `.exe` files will be available in [Releases](https://github.com/YOUR_USERNAME/bees-power-media-manager/releases) when v1.0 is ready.
+Standalone `.exe` files will be available in [Releases](https://github.com/badarpm/bees-power-media) when v1.0 is ready.
 
 ### Run from Source (For Developers)
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/bees-power-media-manager.git
-cd bees-power-media-manager
+git clone https://github.com/badarpm/bees-power-media.git
+cd bees-power-media
 
 # Create virtual environment (recommended)
 python -m venv venv
@@ -129,7 +129,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 | 🧪 Testing & Polish | ⏳ Pending | Week 9-12 |
 | 🚀 v1.0 Release | ⏳ Pending | Week 13 |
 
-See detailed [Project Board](https://github.com/YOUR_USERNAME/bees-power-media-manager/projects) for current tasks.
+See detailed [Project Board](https://github.com/badarpm/bees-power-media/projects) for current tasks.
 
 ---
 
@@ -161,10 +161,10 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-**[Your Name]**  
-📧 Email: [your.email@example.com]  
-💼 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
-🐙 GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+**[Badar Jamal]**  
+📧 Email: [badarjamal@hotmail.com]  
+💼 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/badarjamal)  
+🐙 GitHub: [@Ybadarpm](https://github.com/badarpm/)
 
 ---
 
