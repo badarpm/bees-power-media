@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Platform: Windows](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)](https://www.microsoft.com/windows)
-[![Status: In Development](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/YOUR_USERNAME/bees-power-media-manager)
+[![Status: In Development](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/YOUR_USERNAME/bees-power-media)
 
 > *"Like a bee colony - organized, efficient, and productive!"* 🍯
 
