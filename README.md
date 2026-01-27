@@ -161,10 +161,11 @@ This project is licensed under the **MIT License** - see [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-**[Badar Jamal]**  
-📧 Email: [badarjamal@hotmail.com]  
-💼 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/badarjamal)  
-🐙 GitHub: [@Ybadarpm](https://github.com/badarpm/)
+<strong>Badar Jamal</strong><br>
+📧 Email: badarjamal@hotmail.com<br>
+💼 LinkedIn: https://linkedin.com/in/badarjamal<br>
+🐙 GitHub: <a href="https://github.com/badarpm">@badarpm</a>
+
 
 ---
 
