@@ -7,13 +7,15 @@
 [![Platform: Windows](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)](https://www.microsoft.com/windows)
 [![Status: In Development](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/badarpm/bees-power-media)
 
-> *"Like a bee colony - organized, efficient, and productive!"* 🍯
+> *"organized, efficient, and productive!"* 🍯
 
 ---
 
 ## 🌟 Overview
 
-**Bee's Power Media** is a desktop application for Windows that converts media files between formats with **zero quality loss** using copy streams technology. No re-encoding means conversions are 10-100x faster than traditional tools!
+**Imagine this scenario:** you are watching or listening to media and want to save a portion of it. 
+
+**Bee's Power Media** is a desktop application for Windows that cuts the desired portions and converts media files between formats (containers) with **zero quality loss** using copy streams technology. No re-encoding means conversions are 10-100x faster than tools that re-encode media.
 
 Currently in active development - watch this space! ⭐
 
@@ -22,11 +24,12 @@ Currently in active development - watch this space! ⭐
 ## ✨ Features
 
 ### Current (v1.0 - In Development)
+- ✂️ **Media Cutter:** - Cut/trim the desired portions of the media. 
 - ✅ **Lossless Conversion** - Copy streams preserves 100% original quality
 - ⚡ **Lightning Fast** - No re-encoding = no waiting
-- 📦 **Batch Processing** - Convert multiple files at once
+- 📦 **Batch Processing** - Convert multiple files at once through queue
 - 🎯 **Stream Selection** - Choose specific video, audio, subtitle tracks
-- ✂️ **Precision Trimming** - Cut videos by timestamp (HH:MM:SS)
+- 🎵 Audio extraction
 - 💾 **Project Management** - Save and resume your work
 - 🎨 **Modern UI** - Clean, professional dark theme interface
 - 📊 **Detailed Metadata** - View comprehensive file information
@@ -37,11 +40,11 @@ Currently in active development - watch this space! ⭐
 
 ### Planned Features (v2.0+)
 - 🔄 Re-encoding with quality presets
-- 🎵 Audio extraction
 - 🎬 Video merging and splitting
 - 🖼️ Thumbnail generation
 - 🌐 Mac and Linux support
 - ☁️ Cloud storage integration
+- 🎬 Indexing and organizing media
 
 ---
 
@@ -58,7 +61,7 @@ Currently in active development - watch this space! ⭐
 - **Python 3.10+** (for running from source)
 
 ### Download Release (Recommended - Coming Soon)
-Standalone `.exe` files will be available in [Releases](https://github.com/badarpm/bees-power-media) when v1.0 is ready.
+Standalone `.exe` files will be available in [Releases](https://github.com/badarpm/bees-power-media) when v0.10 is ready.
 
 ### Run from Source (For Developers)
 ```bash
@@ -83,8 +86,8 @@ python src/main.py
 
 *Documentation will be added as development progresses.*
 
-1. Browse and select media files
-2. Configure output format and options
+1. Browse and select media files (drag and drop supported)
+2. Configure output format and options 
 3. Add files to conversion queue
 4. Click "Process Queue" to convert
 
@@ -135,7 +138,7 @@ See detailed [Project Board](https://github.com/badarpm/bees-power-media/project
 
 ## 📄 Documentation
 
-- [Software Requirements Specification (SRS)](docs/SRS.md) - Detailed requirements
+- Software Requirements Specification [(SRS) on GitHub](docs/SRS.md) - For the most current SRS, please visit Confluence page [BPM SRS](https://consultcrew.atlassian.net/wiki/external/ZjBmNjRhOGJmYjJkNDMwMWIwNTg0NWRkYWQ4MzMwODI)
 - [User Guide](docs/USER_GUIDE.md) - Coming soon
 - [Development Guide](docs/DEVELOPMENT.md) - Coming soon
 - [API Documentation](docs/API.md) - Coming soon
@@ -182,7 +185,7 @@ If you find this project useful, please consider:
 ## 🐝 Fun Fact
 
 **Why "Bee's Power"?**  
-Like a bee colony, this tool is designed to be organized, efficient, and productive. Plus, the developer loves bees! 🍯
+Isn't the following fine? Like a bee colony, this tool is designed to be organized, efficient, and productive. Plus, I love bees! And my name starts with B, if that matters. 🍯
 
 ---
 
