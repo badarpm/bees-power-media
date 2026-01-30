@@ -23,7 +23,7 @@ Currently in active development - watch this space! ⭐
 
 ## ✨ Features
 
-### Current (v1.0 - In Development)
+### Current (v0.10 - In Development)
 - ✂️ **Media Cutter:** - Cut/trim the desired portions of the media. 
 - ✅ **Lossless Conversion** - Copy streams preserves 100% original quality
 - ⚡ **Lightning Fast** - No re-encoding = no waiting
@@ -185,10 +185,18 @@ If you find this project useful, please consider:
 ## 🐝 Fun Fact
 
 **Why "Bee's Power"?**  
-Isn't the following fine? Like a bee colony, this tool is designed to be organized, efficient, and productive. Plus, I love bees! And my name starts with B, if that matters. 🍯
+Like a bee colony, this tool is designed to be organized, efficient, and productive. Plus, I love bees! And my name starts with B, if that matters. 🍯
 
 ---
 
 **Made with ❤️ and 🐝 by Badar Jamal**
 
 *Sweet media management for everyone!*
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=badarpm/bees-power-media&type=Date)](https://star-history.com/#badarpm/bees-power-media&Date)
+
+*Every star motivates continued development! ⭐*
