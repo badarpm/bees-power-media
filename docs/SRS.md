@@ -1,13 +1,12 @@
 **Software Requirements Specification (SRS)**  
 This document was last updated on **February 02, 2026**.
 
-# Bee’s Power Media Manager (BPM)
+# Bee’s Power Media (BPM)
 ## Software Requirements Specification (SRS)
 
 **Document Status:** Draft  
 **Target Release (MVP):** 01 Mar 2026  
 **Author / Owner:** Badar Jamal  
-**License:** MIT  
 
 ---
 
@@ -55,26 +54,70 @@ This open-source project is distributed under the **MIT License**.
 | Version | Scope |
 |----|----|
 | v0.10 | Core cutting features, multi-pane UI, spreadsheet-like interface |
-| v0.20 | Project saving, sorting, row reordering, quality-of-life improvements |
+| v0.20 | Project saving, row sorting, skins/themes,  |
 
 ---
 
 ## 6. Core Functionality
 
+BPM aims to offer functionality that seems basic but is either scattered across different media-cutting tools or not available at all. The following table details the features and the version they will be implemented in. MPV = Version 0.01
+
 ### 6.1 Media Processing
 
-| Feature | Description | Planned Version |
+| Feature | Description | Implementation |
 |----|----|----|
-| Copy Streams (No Re-encoding) | Lossless and extremely fast stream copying | v0.10 |
+| Copy Streams | Lossless and extremely fast stream copying | v0.10 |
 | Subtitle Handling | Cut subtitle streams along with media | v0.10 |
 | Stream Selection | Select audio/subtitle streams to include or exclude | v0.10 |
-| Processing Queue | Queue-based batch processing | v0.10 |
+| Queue | Superior user experience with queue-based batch processing | v0.10 |
 
----
+### 6.2 Three Panel Layout
 
-### 6.2 Application Layout
+The application uses a **three-pane layout**
+| Feature | Description | Implementation |
+|----|----|----|
+| File Navigator Pane | Similar to Windows File Explorer, will let users add files to the Working Files pane | v0.10 |
+| Working Files Pane | Files organized in a spreadsheet-like view, with rows representing files and columns representing selectable settings or action buttons. This pane will include a collapsible Preview/MediaInfo sub-pane | v0.10 |
+| Queue Pane | This will also have a spreadsheet-like view, this will contain the files, along with user-selectable settings, ready to be processed | v0.10 |
 
-The application uses a **three-pane layout**:
+### 6.3 The Spreadsheet-like Interface
+
+In addition to a streamlined interface, a spreadsheet-like interface will enable some advanced features not found in current such tools. 
+
+| Feature | Description | Implementation |
+|----|----|----|
+| Drag Handle | When a user selects a cell, it will offer a drag handle in the bottom-right corner, which you can drag to rows above or down to copy the setting to target cells, similar to the spreadsheets. For example, if a cell contains file name, e.g. Video 01.mp4, and the user drags it to five rows down, the file name will be changed to Video 01.mp4 for all five rows. Additionally, an Auto Fill Options button will appear with two primary options: Copy Cells and Fill Series. Other options can be added if required. | v0.10 |
+| Column Resize | The columns will be resizable, like a spreadsheet column | v0.10 |
+
+### 6.4 Planned Features for v0.20
+
+| Feature | Description | Implementation |
+|----|----|----|
+| Save Project | The program will show a Save Project dialogue box if a user adds files to the Working Files pane or takes any other action. The dialogue box will also appear if a user opens an existing project and makes any changes. | v0.20 |
+| Sort by Columns | When you right-click on a column header, it will give you an option to arrange in ascending or descending order. For example, if you right-click on the file name column header, you can arrange all rows in ascending or descending order. | v0.20 |
+| Rearrange Rows | The user will be able to drag and rearrange rows. | v0.20 |
+| Rearrange Columns | Does it make sense to allow dragging and rearranging columns as well:question: | v0.20 |
+| Skins | The program will be developed to support skins, which will support not changing the color scheme but also the compactness of the interface and the look of buttons and other components. For example, it will be possible to design a skeuomorphic skin. | v0.20 |
+
+## 7 Component Descriptions
+
+### Main Toolbar
+
+The main toolbar will be positioned in the uppermost space, above the panes. It will contain the logo and program name on the right and buttons on the left.
+
+| Button | Description | Implementation |
+|----|----|----|
+| Save Project | Saves the project that includes the state of the all three pans. The project will be saved as bpmx files with (.bpmx) extension. A project will save the following:
+1. Explorer Pane: Folder and files selected in the Explorer pane.
+2. Working Files Pane: Files added to the Working Files pane along with the settings the user has modified for any row.
+3. Queue Pane: Files added to the Queue pane along with the settings the user has modified for any row. | v0.20 |
+| Load Project | Loads a saved project | v0.20 |
+| No name (Gear icon only) | Settings. I have not decided what these settings should be. | v0.20 |
+| No name (Help icon only) | Takes to the online help webpage. If we ever decided to integrate an AI agent, it will open the agent pane. | v0.20 |
+
+
+
+
 
 1. **File Navigator Pane**  
    Similar to Windows File Explorer. Used to browse and add files.
