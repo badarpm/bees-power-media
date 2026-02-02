@@ -66,6 +66,7 @@ BPM aims to offer functionality that seems basic but is either scattered across 
 
 | Feature | Description | Implementation |
 |----|----|----|
+| Cut Portion | Cutting the desired portion by entering start and end time | v0.10 |
 | Copy Streams | Lossless and extremely fast stream copying | v0.10 |
 | Subtitle Handling | Cut subtitle streams along with media | v0.10 |
 | Stream Selection | Select audio/subtitle streams to include or exclude | v0.10 |
