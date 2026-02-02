@@ -1,6 +1,5 @@
 **Software Requirements Specification (SRS)**  
-This document was last updated on **Janurary 29, 2026** and might not be current. For the current document please visit:
-https://consultcrew.atlassian.net/wiki/external/ZjBmNjRhOGJmYjJkNDMwMWIwNTg0NWRkYWQ4MzMwODI
+This document was last updated on **February 02, 2026**.
 
 # Bee’s Power Media Manager (BPM)
 ## Software Requirements Specification (SRS)
@@ -14,11 +13,12 @@ https://consultcrew.atlassian.net/wiki/external/ZjBmNjRhOGJmYjJkNDMwMWIwNTg0NWRk
 
 ## 1. Introduction
 
-Bee’s Power Media Manager (BPM) is a Windows desktop application designed for fast, lossless media cutting. It allows users to cut portions of audio or video files **without re-encoding**, preserving original quality while enabling precise control over media streams.
+Ever wanted to cut a portion of a video you’re watching and save it to your Saved Videos collection or share it with someone? This Windows app lets you do that.
 
-The MVP focuses on a common but underserved use case: cutting segments of media files and saving them in a chosen container format (e.g., MKV, MP3), while selectively including or excluding audio and subtitle streams.
+The first version (MVP) will offer functionality for a common media management scenario: cutting portions of media files without re-encoding, with an option to select the target container (MKV, mp3, etc.) 
 
-This version will primarily validate:
+This version MVP) will primarily validate:
+
 - User interface and user experience
 - Technical feasibility
 - Market demand and future direction
@@ -27,15 +27,15 @@ This version will primarily validate:
 
 ## 2. License
 
-This project is open source and distributed under the **MIT License**.
+This open-source project is distributed under the **MIT License**.
 
 ---
 
-## 3. Success Metrics
+## 3. Goals
 
 | Goal | Metric |
 |----|----|
-| Launch MVP on time | First stable version released by 01 Mar 2026 |
+| Launch MVP | First stable version released by 01 Mar 2026 |
 | Usability | A test user with medium technical literacy can cut and convert multiple files without external help |
 | Reliability | No major blocking bugs in core functionality |
 
