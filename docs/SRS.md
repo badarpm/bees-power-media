@@ -95,10 +95,9 @@ In addition to a streamlined interface, a spreadsheet-like interface will enable
 | Feature | Description | Implementation |
 |----|----|----|
 | Save Project | The program will show a Save Project dialogue box if a user adds files to the Working Files pane or takes any other action. The dialogue box will also appear if a user opens an existing project and makes any changes. | v0.20 |
-| Sort by Columns | When you right-click on a column header, it will give you an option to arrange in ascending or descending order. For example, if you right-click on the file name column header, you can arrange all rows in ascending or descending order. | v0.20 |
-| Rearrange Rows | The user will be able to drag and rearrange rows. | v0.20 |
-| Rearrange Columns | Does it make sense to allow dragging and rearranging columns as well:question: | v0.20 |
-| Skins | The program will be developed to support skins, which will support not changing the color scheme but also the compactness of the interface and the look of buttons and other components. For example, it will be possible to design a skeuomorphic skin. | v0.20 |
+| Sort by Columns | Columns will have the option to sort ascending, descending, and user defined. The user defined will be the order by which the files were added or rearranged by the user. | v0.20 |
+| Rearrange Columns | Does it make sense to allow dragging and rearranging columns as well :question: | v0.20 |
+| Skins | The program will be developed to support skins, which will support not only changing the color scheme but also the compactness of the interface and the look of buttons and other components. For example, it will be possible to design a skeuomorphic skin. | v0.20 |
 
 ## 7 Component Descriptions
 
