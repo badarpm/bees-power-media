@@ -14,9 +14,9 @@ This document was last updated on **February 02, 2026**.
 
 Ever wanted to cut a portion of a video you’re watching and save it to your Saved Videos collection or share it with someone? This Windows app lets you do that.
 
-The first version (MVP) will offer functionality for a common media management scenario: cutting portions of media files without re-encoding, with an option to select the target container (MKV, mp3, etc.) 
+The first version v0.10 (MVP) will offer functionality for a common media management scenario: cutting portions of media files without re-encoding, with an option to select the target container (MKV, mp3, etc.) 
 
-This version MVP) will primarily validate:
+This version will primarily validate:
 
 - User interface and user experience
 - Technical feasibility
