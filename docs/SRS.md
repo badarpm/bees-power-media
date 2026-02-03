@@ -1,10 +1,9 @@
-**Software Requirements Specification (SRS)**  
-This document was last updated on **February 02, 2026**.
-
 # 🐝 Bee’s Power Media (BPM)
 ## Software Requirements Specification (SRS)
 
-**Document Status:** Draft  
+**Version:** 1.0  
+**Status:** Baseline  
+**Last Updated:** 03 Feb 2026    
 **Target Release (MVP):** 01 Mar 2026  
 **Author / Owner:** [Badar Jamal](https://github.com/badarpm/)  
 
@@ -143,7 +142,7 @@ A related aspect: Users can drag files from Windows File Explorer to the BPM win
 | Add to Queue | Button | Adds the file to the Queue pane. Available only for main rows (not sub-rows). | v0.10 |
 | Remove File | Icon | ❎ Small X icon. Turns red on hover and removes the file when clicked. | v0.10 |
 
-### 8.4 Working Files Toolbar
+### 8.5 Working Files Toolbar
 
 | Button | Description | Implementation |
 |----|----|----|
@@ -151,7 +150,7 @@ A related aspect: Users can drag files from Windows File Explorer to the BPM win
 | Add Selected to Queue (2) | Will add the files selected (checked) in the Working Files pane to the Queue pane. (2) shows the number of currently selected (checked) files. | v0.10 |
 | Clear | Unselects all selected files (Clears all the checkmarks) | v0.10 |
 
-### 8.5 Queue Pane
+### 8.6 Queue Pane
 
 | Column Title | Type | Details | Implementation |
 |----|----|----|----|
@@ -159,7 +158,7 @@ A related aspect: Users can drag files from Windows File Explorer to the BPM win
 | Target File | Text string | With file name (Vacation_sum....MKV). Three dots before the file extension indicate truncation if the full name does not fit the column width.<br><br>Below the file name, the file path is shown (C:\Users\Michael\Videos\Vac...). Truncation is used only if the path does not fit the column width.<br><br><strong>Optional:</strong> The text string is editable. A small button titled <em>Rename</em> appears next to the file name. Clicking the file name or the Rename button enables editing (extension excluded). Once typing starts, the button changes from <em>Rename</em> to <em>Save</em>. Clicking Save or pressing Enter renames the file. Clicking outside opens a dialog with two options: Rename; Don’t Rename (keyboard shortcuts: Enter; Esc).<br><br>Next to the file path, a small <em>Change</em> button is shown. Clicking it opens the standard File Explorer dialog to select the output folder. The user may also edit the path directly; in this case, the button changes to <em>Save</em>. Clicking Save or pressing Enter confirms the folder. Clicking outside opens a dialog with two options: Change Folder; Don’t Change Folder (keyboard shortcuts: Enter; Esc). | v0.10 |
 
 
-### 8.6 Queue Toolbar
+### 8.7 Queue Toolbar
 
 | Button | Description | Implementation |
 |----|----|----|
@@ -187,7 +186,7 @@ For the first version (MVP), the following items are out of scope.
 
 ---
 
-## 10 Design
+## 11 Design
 
 Here is the initial design created in HTML/CSS with the help of claude.ai. You can also [view the HTML code](./BPM-mockup-v42.html) or [render HTML file](https://badarpm.github.io/bees-power-media/BPM-mockup-v42.html).
 
@@ -196,7 +195,7 @@ Here is the initial design created in HTML/CSS with the help of claude.ai. You c
 
 ---
 
-## 11 Definitions, Acronyms, and Abbreviations
+## 12 Definitions, Acronyms, and Abbreviations
 
 **SRS**: Software Requirements Specification 
 **FFmpeg**: Fast Forward Moving Picture Experts Group - media processing library 
@@ -206,9 +205,3 @@ Here is the initial design created in HTML/CSS with the help of claude.ai. You c
 **Bitrate**: Amount of data per second in a media file 
 **GUI**: Graphical User Interface 
 
-
----
-
-## 14. Reference Links
-
-(To be added)
