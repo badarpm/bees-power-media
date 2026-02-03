@@ -11,6 +11,13 @@
 
 ---
 
+[![CI](https://github.com/badarpm/bees-power-media/actions/workflows/ci.yml/badge.svg)](https://github.com/badarpm/bees-power-media/actions/workflows/ci.yml)
+[![Code Coverage](https://img.shields.io/badge/coverage-0%25-red)](https://github.com/badarpm/bees-power-media)
+[![Documentation](https://img.shields.io/badge/docs-in%20progress-yellow)](https://github.com/badarpm/bees-power-media/wiki)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+---
+
 ## 🌟 Overview
 
 **Imagine this scenario:** you are watching or listening to media and want to save a portion of it. 
