@@ -6,7 +6,7 @@ This document was last updated on **February 02, 2026**.
 
 **Document Status:** Draft  
 **Target Release (MVP):** 01 Mar 2026  
-**Author / Owner:** Badar Jamal  
+**Author / Owner:** [Badar Jamal](https://github.com/badarpm/)  
 
 ---
 
@@ -111,13 +111,10 @@ The main toolbar will be positioned in the uppermost space, above the panes. It 
 
 | Button | Description | Implementation |
 |----|----|----|
-| Save Project | Saves the project that includes the state of the all three pans. The project will be saved as bpmx files with (.bpmx) extension. A project will save the following:
-1. Explorer Pane: Folder and files selected in the Explorer pane.
-2. Working Files Pane: Files added to the Working Files pane along with the settings the user has modified for any row.
-3. Queue Pane: Files added to the Queue pane along with the settings the user has modified for any row. | v0.20 |
+| Save Project | Saves the project that includes the state of all three panes. The project is saved as a `.bpmx` file. A project saves the following:<ol><li>Explorer Pane: Folder and files selected in the Explorer pane.</li><li>Working Files Pane: Files added to the Working Files pane along with modified settings.</li><li>Queue Pane: Files added to the Queue pane along with modified settings.</li></ol> | v0.20 |
 | Load Project | Loads a saved project | v0.20 |
-| ⚙️No name | Gear icon for settings. I have not decided what these settings should be. | v0.20 |
-| ❔ No name | Help icon for help. Takes to the online help webpage. If we ever decided to integrate an AI agent, it will open the agent pane. | v0.20 |
+| ⚙️ | No text; Gear icon only for settings. Not yet defined. | v0.20 |
+| ❔ No name | No text; Help icon only for help. Opens online help. May open AI agent pane in future. | v0.20 |
 
 ### 8.2 File Explorer Pane 
 
@@ -138,18 +135,13 @@ A related aspect: Users can drag files from Windows File Explorer to the BPM win
 | Column Title | Type | Details | Implementation |
 |----|----|----|----|
 | ⠿ No name | Drag Handles | Six dots as drag handles | v0.10 |
-| Source Media | Text string | With file name (Vacation_sum....MKV) Three dots before file extension show truncation, in case the whole name does not fit in the current column width.
-
-In the same row, below the file name, file path will be shown (C:\Users\Michael\Videos\Vac...). Again, truncation will only be used if the file path does not fit in the column width.
-
-**Optional**: The text string will be editable. There will be a small button titled Rename next to the file name. Clicking on the file name or the Rename button will enable the user to type a new name excluding extension. As soon as the user starts typing, the button will change from Rename to Save. Clicking the Save button or pressing the Enter key will rename the file. If the user clicks outside the fields, a dialogue box will appear offering two options: Rename; Don’t Rename.  | v0.10 |
-| Output Format | Dropdown Menu | This column will show a dropdown menu with a list of all supported output formats (containers) categorized by Video and Audio. | v0.10 |
-| Select Streams | Checkbox | A checkbox. Unchecked means that all streams will be copied. When checked, it will show sub-rows below, one for each video, audio, and subtitle stream. Each sub-row will have checkboxes as well, allowing the user to select which streams they want to be copied in the output. Unchecked streams will not be copied.
-Additionally, a dropdown will be shown for each sub-row with the option to set the stream as default. For example, if a video has two audio or subtitle streams, this option will enable the user to choose the default audio and subtitle stream. | v0.10 |
-| Start Time | Time input | It will show start position of the media cut in HH:MM:SS format. The default will be 00:00:00. The user will be able to click into the HH, MM, or SS position. The colon (:) will be grayed out and the user don't need to interact with it. For example, if a user clicks the MM position, both MM values will be highlighted, ready to edit. And when the user enters 2531, the start time will change to 25:31 (25 minutes and 31 seconds).  | v0.10 |
-| End Time | Time input | It will show start position of the media cut in HH:MM:SS format. The default will be The total duration of the media file. For example a two-hour and 55 minute video file will display 00:02:55. Editing process will be the same as the Start Time column. | v0.10 |
-| Add to Queue | Button | An Add to Queue button for each main row (excluding sub-rows) that will add the file to the Queue pane below already added files. | v0.10 |
-| Remove File | Icon | ❎ This will show a small X icon. The icon will turn from white/yellow to red on hover and will remove the file from the pane when clicked. | v0.10 |
+| Source Media | Text string | With file name (Vacation_sum....MKV). Three dots before the file extension indicate truncation if the name does not fit the column width.<br><br>Below the file name, the file path is shown (C:\Users\Michael\Videos\Vac...). Truncation is used only if the path does not fit the column width.<br><br><strong>Optional:</strong> The text string is editable. A small button titled <em>Rename</em> appears next to the file name. Clicking the file name or the Rename button enables editing (extension excluded). Once typing starts, the button changes to <em>Save</em>. Clicking Save or pressing Enter renames the file. Clicking outside opens a dialog with two options: Rename; Don’t Rename. | v0.10 |
+| Output Format | Dropdown Menu | Dropdown listing all supported output formats (containers), categorized by Video and Audio. | v0.10 |
+| Select Streams | Checkbox | Checkbox. Unchecked means all streams are copied. When checked, sub-rows appear for each video, audio, and subtitle stream, each with its own checkbox. Unchecked streams are not copied.<br><br>Each sub-row also includes a dropdown to mark the stream as default (e.g., default audio or subtitle). | v0.10 |
+| Start Time | Time input | Start position of the cut in HH:MM:SS format. Default is 00:00:00. User can click HH, MM, or SS; colons are non-editable. Entering 2531 in MM changes the value to 25:31. | v0.10 |
+| End Time | Time input | End position of the cut in HH:MM:SS format. Default is the total media duration (e.g., 02:55:00). Editing behavior matches Start Time. | v0.10 |
+| Add to Queue | Button | Adds the file to the Queue pane. Available only for main rows (not sub-rows). | v0.10 |
+| Remove File | Icon | ❎ Small X icon. Turns red on hover and removes the file when clicked. | v0.10 |
 
 ### 8.4 Working Files Toolbar
 
@@ -162,13 +154,10 @@ Additionally, a dropdown will be shown for each sub-row with the option to set t
 ### 8.5 Queue Pane
 
 | Column Title | Type | Details | Implementation |
+|----|----|----|----|
 | ⠿ No name | Drag Handles | Six dots as drag handles | v0.10 |
-| Target File | Text string | With file name (Vacation_sum....MKV) Three dots before file extension show truncation, in case the whole name does not fit in the current column width.
+| Target File | Text string | With file name (Vacation_sum....MKV). Three dots before the file extension indicate truncation if the full name does not fit the column width.<br><br>Below the file name, the file path is shown (C:\Users\Michael\Videos\Vac...). Truncation is used only if the path does not fit the column width.<br><br><strong>Optional:</strong> The text string is editable. A small button titled <em>Rename</em> appears next to the file name. Clicking the file name or the Rename button enables editing (extension excluded). Once typing starts, the button changes from <em>Rename</em> to <em>Save</em>. Clicking Save or pressing Enter renames the file. Clicking outside opens a dialog with two options: Rename; Don’t Rename (keyboard shortcuts: Enter; Esc).<br><br>Next to the file path, a small <em>Change</em> button is shown. Clicking it opens the standard File Explorer dialog to select the output folder. The user may also edit the path directly; in this case, the button changes to <em>Save</em>. Clicking Save or pressing Enter confirms the folder. Clicking outside opens a dialog with two options: Change Folder; Don’t Change Folder (keyboard shortcuts: Enter; Esc). | v0.10 |
 
-In the same row, below the file name, file path will be shown (C:\Users\Michael\Videos\Vac...). Again, truncation will only be used if the file path does not fit in the column width.
-
-Optional: The text string will be editable. There will be a small button titled Rename next to the file name. Clicking on the file name or the Rename button will enable the user to type a new name excluding extension. As soon as the user starts typing, the button will change from Rename to Save. Clicking the Save button or pressing the Enter key will rename the file. If the user clicks outside the fields, a dialogue box will appear offering two options: Rename; Don’t Rename (Keyboard shortcuts: Enter; Esc).
-Additionally, next to the file path, there will be a small Change button. Clicking it will open the standard File Explorer dialogue box, allowing the user to select the output folder. The user can directly edit the path, and in this case, the browser button will change to Save. Clicking the Save button or pressing the Enter key will confirm the output folder. If the user clicks outside the fields, a dialogue box will appear offering two options: Change Folder; Don’t Change Folder (Keyboard shortcuts: Enter; Esc). |v0.10 |
 
 ### 8.6 Queue Toolbar
 
@@ -190,7 +179,13 @@ For the first version (MVP), the following items are out of scope.
 
 - Preview with seek functionality (Only supports a static screenshot as a preview)
 
-- Playing media within the app (Launches external media player) 
+- Playing media within the app (Launches external media player)
+
+## Design
+
+Here is the initial design created in HTML/CSS with the help of claude.ai. You can also view the HTML file. 
+
+![Screenshot](docs/BPM-mockup-v42-Screenshot.png)
 
 ====================================================================
 
