@@ -197,11 +197,11 @@ Here is the initial design created in HTML/CSS with the help of claude.ai. You c
 
 ## 12 Definitions, Acronyms, and Abbreviations
 
-**SRS**: Software Requirements Specification 
-**FFmpeg**: Fast Forward Moving Picture Experts Group - media processing library 
-**Copy Streams**: Converting container format without re-encoding (lossless) 
-**MKV**: Matroska Video format 
-**Codec**: Algorithm for encoding/decoding video or audio 
-**Bitrate**: Amount of data per second in a media file 
-**GUI**: Graphical User Interface 
+**SRS**: Software Requirements Specification  
+**FFmpeg**: Fast Forward Moving Picture Experts Group - media processing library  
+**Copy Streams**: Converting container format without re-encoding (lossless)  
+**MKV**: Matroska Video format  
+**Codec**: Algorithm for encoding/decoding video or audio  
+**Bitrate**: Amount of data per second in a media file  
+**GUI**: Graphical User Interface  
 
