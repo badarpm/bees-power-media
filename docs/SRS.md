@@ -167,9 +167,13 @@ A related aspect: Users can drag files from Windows File Explorer to the BPM win
 | Clear Queue | Deletes all the queue pan rows. | v0.10 |
 | Clear Completed | Deletes the rows for completed tasks in the queue pane. | v0.10 |
 
+---
+
 ## 9 User Story
 
 A user is watching a TV serial and wants to cut out their favorite scenes. BPM will enable them to cut the desired portions, without re-encoding, keeping the selected media streams. For example, there is one video stream, two audio streams, and five subtitles. The user can cut the desired portion with only the required video, audio, and subtitle streams. No re-encoding means quick and lossless cutting. In future versions, the program will support re-encoding with a wide range of codecs.
+
+---
 
 ## 10 Out of Scope
 
@@ -181,132 +185,27 @@ For the first version (MVP), the following items are out of scope.
 
 - Playing media within the app (Launches external media player)
 
-## Design
+---
 
-Here is the initial design created in HTML/CSS with the help of claude.ai. You can also view the HTML file. 
+## 10 Design
 
-![Screenshot](docs/BPM-mockup-v42-Screenshot.png)
-
-====================================================================
-
-| Column Title | Type | Details | Implementation |
-|  |  |  | v0.10 |
-|  |  |  | v0.10 |
-
-| Button | Description | Implementation |
-|----|----|----|
-|  |  | v0.10 |
-|  |  | v0.10 |
+Here is the initial design created in HTML/CSS with the help of claude.ai. You can also [view the HTML code](./BPM-mockup-v42.html) or [render HTML file](https://badarpm.github.io/bees-power-media/BPM-mockup-v42.html).
 
 
-1. **File Navigator Pane**  
-   Similar to Windows File Explorer. Used to browse and add files.
-
-2. **Working Files Pane**  
-   Spreadsheet-like view where each row represents a file and columns represent editable settings.  
-   Includes a collapsible **Preview / MediaInfo** sub-pane.
-
-3. **Queue Pane**  
-   Spreadsheet-like view of files ready for processing with final settings.
+![Screenshot](./BPM-mockup-v42-Screenshot.png)
 
 ---
 
-### 6.3 Spreadsheet-Like Interface Features
+## 11 Definitions, Acronyms, and Abbreviations
 
-- Click-and-drag cell autofill (similar to Excel)
-- Auto Fill Options:
-  - Copy Cells
-  - Fill Series
-- Resizable columns
-- Row drag-and-drop reordering
-- Column sorting (ascending / descending)
+**SRS**: Software Requirements Specification 
+**FFmpeg**: Fast Forward Moving Picture Experts Group - media processing library 
+**Copy Streams**: Converting container format without re-encoding (lossless) 
+**MKV**: Matroska Video format 
+**Codec**: Algorithm for encoding/decoding video or audio 
+**Bitrate**: Amount of data per second in a media file 
+**GUI**: Graphical User Interface 
 
----
-
-## 7. Rows & Columns Specification
-
-### 7.1 Working Files Pane
-
-| Column | Type | Description |
-|----|----|----|
-| Drag Handle | UI control | Rearrange rows |
-| Source Media | Text | File name with truncation; file path shown below |
-| Output Format | Dropdown | Supported containers, grouped by Audio / Video |
-| Select Streams | Checkbox | Expandable sub-rows for video/audio/subtitle streams |
-| Start Time | Time input | HH:MM:SS (default: 00:00:00) |
-| End Time | Time input | HH:MM:SS (default: total duration) |
-| Add to Queue | Button | Adds file to Queue Pane |
-| Remove File | Icon | Removes file from Working Files |
-
-**Optional behavior:**  
-- File rename (excluding extension) with inline edit and confirmation dialog
-
----
-
-### 7.2 Queue Pane
-
-| Column | Type | Description |
-|----|----|----|
-| Drag Handle | UI control | Rearrange rows |
-| Target File | Text | Output file name and path |
-| Output Folder | Editable path | Changeable via File Explorer dialog |
-
-**Optional behavior:**  
-- Inline rename with Save / Cancel
-- Inline output folder change with confirmation
-
----
-
-## 8. Requirements
-
-| Requirement | User Story | Priority |
-|----|----|----|
-| Intuitive advanced media cutting | A user wants to cut favorite scenes from a TV show without re-encoding, selecting only required audio and subtitle streams | High |
-
----
-
-## 9. Out of Scope (MVP)
-
-The following are explicitly excluded from the MVP:
-
-- Codec conversion or re-encoding
-- In-app media playback
-- Seekable preview (static preview only)
-- Advanced timeline editing
-
----
-
-## 10. Design
-
-Design details (UI mockups, interaction flows) are maintained separately and linked from project documentation.
-
----
-
-## 11. Open Questions
-
-| Question | Answer | Date |
-|----|----|----|
-| Should column reordering be supported? | TBD | — |
-
----
-
-## 12. User Stories
-
-| Title | Description | Priority |
-|----|----|----|
-| — | No user stories finalized yet | — |
-
----
-
-## 13. Definitions, Acronyms, and Abbreviations
-
-- **SRS** — Software Requirements Specification  
-- **FFmpeg** — Media processing library  
-- **Copy Streams** — Container conversion without re-encoding  
-- **MKV** — Matroska Video format  
-- **Codec** — Encoding/decoding algorithm  
-- **Bitrate** — Data rate of media  
-- **GUI** — Graphical User Interface  
 
 ---
 
