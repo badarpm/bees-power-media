@@ -2,12 +2,14 @@
 
 **Sweet, efficient media management for Windows**
 
+> *"organized, efficient, and productive!"* 🍯
+
+---
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Platform: Windows](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey)](https://www.microsoft.com/windows)
 [![Status: In Development](https://img.shields.io/badge/status-in%20development-orange)](https://github.com/badarpm/bees-power-media)
-
-> *"organized, efficient, and productive!"* 🍯
 
 ---
 
